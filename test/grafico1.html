@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Gráfico 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div style="width: 70%; margin:auto;">
+        <!-- canvas = lienzo  -->
+        <canvas id="lienzo"></canvas>
+    </div>
+    
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script>
+        /* contexto = lienzo donde pintaremos o rendizaremos */
+        const contexto = document.querySelector("#lienzo")
+        /* Chart(referencia_canvas, configuracion_grafico) */
+        const grafico = new Chart(contexto,{
+            type:'bar',
+            data:{
+                labels: ["PHP","JavaScript","C#","Python"],
+                datasets:[{
+                    label:"2022",
+                    data:[45,55,23,14]
+                },{
+                    label:"2023",
+                    data:[20,10,40,60]
+                }]
+            }
+        })
+
+    </script>
+</body>
+<!-- Pasos para crear un gráfico 
+1) llamamos al script de charjs y crees un div, que contenga canvas
+2) llamamos en un script el lienzo con document.queryselector
+3)
+4)
+5)
+6)
+-->
+</html>
